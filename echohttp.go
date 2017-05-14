@@ -31,6 +31,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	var resp string
 	resp = ""
+	resp += PadRight("=", "=", 80) + "\n"
 
 	hostname, err := os.Hostname()
 	if err != nil {
